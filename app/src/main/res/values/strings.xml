@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">ComprAmbCalma</string>
+    <string name="app_name">AmbCalma</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZ3VpbGxlbXJiYWlnZXMiLCJhIjoiY2s4cWVyMDgyMDJpbzNrbnA0YTJqajY1ZSJ9.O1ChuFBE7MS0R1GRnI3p-Q</string>
 </resources>

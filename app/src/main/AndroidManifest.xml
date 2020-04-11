@@ -1,20 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.comprambcalma">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_magnify"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_magnify_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBIWX47JNJ8-VS701_mRXwe5Fy_G4ejEhk"/>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".LoadingCloserSupermarketsActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".CloserSupermarketsActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".GoShoppingActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".MainShoppingActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".StoreOccupationActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".PlanShoppingActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+        <activity android:name=".CreateProfileActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
         </activity>
     </application>
 
